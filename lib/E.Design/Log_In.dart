@@ -123,7 +123,7 @@ class Log_In extends StatelessWidget {
                                 );
                               },
                               child: Text(
-                                'Sign Up',
+                                'Register',
                                 style: TextStyle(
                                   color: Colors.black,
                                   decoration: TextDecoration.underline,
