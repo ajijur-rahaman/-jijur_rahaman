@@ -42,6 +42,14 @@ class CartState extends State<Cart> {
     });
   }
 
+  double get subtotal {
+    double total = 0;
+    for (int i = 0; i < items.length; i++) {
+      total += double.parse(items[i]['price']!) * counts[i];
+    }
+    return total;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -122,7 +130,10 @@ class CartState extends State<Cart> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CustomText(title1: 'Product price', price1: '\$110'),
+                    CustomText(
+                      title1: 'Product price',
+                      price1: '\$${subtotal.toStringAsFixed(2)}',
+                    ),
                     Divider(color: Color(0xffE8E8E8)),
                     CustomText(title1: 'Shipping', price1: 'Freeship'),
                     Divider(color: Color(0xffE8E8E8)),
@@ -133,7 +144,7 @@ class CartState extends State<Cart> {
                         children: [
                           Text('Subtotal', style: TextStyle(fontSize: 18)),
                           Text(
-                            '\$110',
+                            '\$${subtotal.toStringAsFixed(2)}',
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
