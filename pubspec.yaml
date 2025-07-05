@@ -61,20 +61,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-        - assets/images/dp1.jpg
-        - assets/images/dp.png
-        - assets/images/dp3.jpg
-        - assets/images/dp4.jpg
-        - assets/images/dp5.jpg
-        - assets/images/dp6.jpg
-        - assets/images/apple.png
-        - assets/images/Facebook_Lite.png
-        - assets/images/women.jpg
-        - assets/images/girl91.jpg
-        - assets/images/sdf.png
-        - assets/images/g00.png
-        - assets/images/g000.png
-        - assets/images/girl8.png
+        - assets/images/
         - lib\pages\modelingSystem\data\products.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
