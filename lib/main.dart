@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_ai/E.Design/Cart.dart';
+import 'package:learning_ai/E.Design/Cheek_Out.dart';
 import 'package:learning_ai/dart_learning/day1.dart';
 // import 'package:learning_ai/E.Design/Cart.dart';
 // import 'package:learning_ai/E.Design/End_Drawer.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'PlayfairDisplay',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Cart(),
+      home: Cheek_Out(),
       routes: {
         '/home': (context) => Products(),
         // When navigating to the "/second" route, build the SecondScreen widget.
